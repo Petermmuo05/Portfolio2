@@ -3,19 +3,58 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-classy-vogue: "Classyvogueregular", sans-serif;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+::selection {
+  background-color: #557174; /* Golden Yellow */
+  color: #f5f5f0; /* Text color when highlighted */
+}
+body {
+  font-family: var(--font-classy-vogue);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* color: var(--foreground); */
+  /* background: var(--background); */
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: var(--font-classy-vogue), sans-serif;
+}
+
+.responsive-text {
+  font-size: clamp(12px, 1.5vw + 0.5rem, 18px);
+}
+
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
+.frosted-bar {
+  background-color: rgba(
+    85,
+    113,
+    116,
+    0.6
+  ); /* Semi-transparent background color */
+  backdrop-filter: blur(10px); /* Frosted glass blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  z-index: 999;
+}
+
+.dropbox {
+  transition: margin-top 0.3s ease-out;
+}
+.card {
+  transition: margin-top 0.25s ease-out;
+}
+.card:hover .dropbox {
+  margin-top: 8vh; /* Child moves down more */
+}
+.colorlink {
+  transition: background-color 0.4s ease-in-out;
+}
+
+.card:hover {
+  margin-top: -0.6%;
 }
