@@ -5,7 +5,7 @@ import Chowhub1 from "./../../../public/chowhub1.png";
 import Admin from "./../../../public/chowhub_admin.png";
 import BlurFade from "@/components/ui/blur-fade";
 
-export default function Ecoride() {
+export default function ChowHub() {
   return (
     <div className="flex flex-col gap-[70px] max-450:gap-[35px]  max-lg:gap-[55px] max-800:gap-[41px] text-[#557174] px-[30px] max-sm:px-[1%]">
       <div className="flex w-full mt-[180px] max-800:mt-[130px] max-450:gap-4 justify-center max-lg:text-[90px] max-800:text-[67px] text-[120px] text-[#557174] leading-[90%] flex-col gap-10 max-lg:gap-7 max-800:gap-5">
