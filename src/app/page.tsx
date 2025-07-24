@@ -1,9 +1,10 @@
 import Image from "next/image";
-import  Star from "./../../public/terminal.svg";
+import Star from "./../../public/terminal.svg";
 import Chowhub1 from "./../../public/chowhub1.png";
 import BookingPage from "./../../public/bookingPage.svg";
-import  Kiti from "./../../public/Kiti.svg";
-import  Chowhub2 from "./../../public/chowhub2.png";
+import Kiti from "./../../public/Kiti.svg";
+// import Chowhub2 from "./../../public/chowhub2.png";
+import NoteHome from "./../../public/NoteHome.png";
 import Mobile from "./../../public/mobile.svg";
 import Analytics from "./../../public/analytics.png";
 import BlurFade from "@/components/ui/blur-fade";
@@ -149,17 +150,17 @@ export default function Home() {
 
       <div className="grid grid-cols-10 text-[#140d0b] w-full gap-[50px] gap-y-[140px]   max-800:gap-y-[50px] h-fit">
         <Link
-          href="/chowhub"
+          href="/noteinsight"
           className="col-span-5 h-[70vh] max-800:col-span-10 max-w-[100vw] min-h-[220px] max-800:h-[41vh] max-h-[600px] card overflow-hidden pt-[50px] max-lg:h-[55vh] bg-[#C5B8D0] max-600:h-[35vh] rounded-[70px] "
         >
           <div className="flex mx-16 flex-col items-end text-gray-600">
             <span className="max-600:text-[13px]">PROJECTS</span>
             <span className="text-[30px] max-600:text-[24px] font-extrabold">
-              ChowHub
+              NoteInsight
             </span>
           </div>
           <div className="w-[1000px] max-sm:w-[700px] dropbox mx-16 max-sm:mt-5 mt-10 h-full rounded-tl-xl overflow-hidden">
-            <Image src={Chowhub2} alt="chowhub" className="w-full" />
+            <Image src={NoteHome} alt="chowhub" className="w-full" />
           </div>{" "}
         </Link>
         <Link

@@ -29,7 +29,7 @@ export default function About() {
         </div>
         <div className="min-sm:basis-[700px] max-sm:justify-center flex flex-col gap-[30px] max-800:gap-[20px] max-lg:gap-[25px] text-[23px] max-800:text-[16px] max-lg:text-[20px] text-gray-600 ">
           <p className="text-[48px] font-extrabold leading-[105%] max-800:text-[36px] max-lg:text-[42px] max-sm:text-center">
-            I am a Web Developer working remotely from Lagos, Nigeria.
+            I am a Software Engineer working remotely from Lagos, Nigeria.
           </p>
           <p className="font-serif  ">
             With extensive experience in software engineering, particularly web
@@ -53,9 +53,9 @@ export default function About() {
       >
         <Bar
           position="min-800:self-end"
-          place="Non-Profit"
-          title="Web Dev"
-          time="24"
+          place="CVTOCAREER"
+          title="Full-Stack Dev"
+          time="25"
         />
         <Bar
           position="min-800:ml-[44vw]"
