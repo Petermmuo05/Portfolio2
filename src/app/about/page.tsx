@@ -1,6 +1,6 @@
 import BlurFade from "@/components/ui/blur-fade";
 import { FadeText } from "@/components/ui/fade-text";
-import Profile from "./../../../public/mainprofile.png";
+import Profile from "./../../../public/mainprofile2.jpeg";
 import Image from "next/image";
 
 export default function About() {
@@ -24,7 +24,7 @@ export default function About() {
             delay={0.2}
             inView
           >
-            <Image src={Profile} alt="chowhub" className="h-full" />
+            <Image src={Profile} alt="chowhub" className="" />
           </BlurFade>
         </div>
         <div className="min-sm:basis-[700px] max-sm:justify-center flex flex-col gap-[30px] max-800:gap-[20px] max-lg:gap-[25px] text-[23px] max-800:text-[16px] max-lg:text-[20px] text-gray-600 ">
