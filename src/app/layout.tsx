@@ -4,11 +4,12 @@ import "./globals.css";
 import Image from "next/image";
 // import Profile from "/profile.jpg";
 import Profile from "./../../public/profile.jpg";
-
 import Whatsapp from "./../../public/whatsapp.svg";
 import LinkedIn from "./../../public/linkedin.svg";
 import Twitter from "./../../public/twitter.svg";
 import Navbar from "./navbar";
+import { Analytics } from '@vercel/analytics/next';
+
 
 const vogue = localFont({
   src: "./fonts/Classyvogueregular.ttf",
@@ -48,6 +49,7 @@ export default function RootLayout({
             <Navbar />
           </nav>
         </header>
+        <Analytics/>
         {children}
 
         <div className="mt-[20vh] max-sm:mt-[100px]  relative  h-[250px] max-sm:h-[150px] text-gray-600 max-450:text-[14px] py-5 w-full">
