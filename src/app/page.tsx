@@ -7,6 +7,8 @@ import Kiti from "./../../public/Kiti.svg";
 import NoteHome from "./../../public/NoteHome.png";
 import Mobile from "./../../public/mobile.svg";
 import Analytics from "./../../public/analytics.png";
+import FilmPad2 from "./../../public/filmpad2.webp";
+import Resudoc1 from "./../../public/Resudoc1.webp";
 import BlurFade from "@/components/ui/blur-fade";
 import { FadeText } from "@/components/ui/fade-text";
 import Link from "next/link";
@@ -149,6 +151,34 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-10 text-[#140d0b] w-full gap-[50px] gap-y-[140px]   max-800:gap-y-[50px] h-fit">
+        <Link
+          href="/resudoc"
+          className="col-span-5 h-[70vh] max-800:col-span-10 max-w-[100vw] min-h-[220px] max-800:h-[41vh] max-h-[600px] card overflow-hidden pt-[50px] max-lg:h-[55vh] bg-[#D4E4F7] max-600:h-[35vh] rounded-[70px] "
+        >
+          <div className="flex mx-16 flex-col items-end text-gray-600">
+            <span className="max-600:text-[13px]">PROJECTS</span>
+            <span className="text-[30px] max-600:text-[24px] font-extrabold">
+              ResuDoc
+            </span>
+          </div>
+          <div className="w-[1000px] max-sm:w-[700px] dropbox mx-16 max-sm:mt-5 mt-10 h-full rounded-tl-xl overflow-hidden">
+            <Image src={Resudoc1} alt="resudoc" className="w-full" />
+          </div>{" "}
+        </Link>
+        <Link
+          href="/filmpad"
+          className="col-span-5 h-[70vh] max-800:col-span-10 max-w-[100vw] min-h-[220px] max-800:h-[41vh] max-h-[600px] card overflow-hidden pt-[50px] max-lg:h-[55vh] bg-[#FDE2E4] max-600:h-[35vh] rounded-[70px] "
+        >
+          <div className="flex mx-16 flex-col items-end text-gray-600">
+            <span className="max-600:text-[13px]">PROJECTS</span>
+            <span className="text-[30px] max-600:text-[24px] font-extrabold">
+              FilmPad
+            </span>
+          </div>
+          <div className="w-[1000px] max-sm:w-[700px] dropbox mx-16 max-sm:mt-5 mt-10 h-full rounded-tl-xl overflow-hidden">
+            <Image src={FilmPad2} alt="filmpad" className="w-full" />
+          </div>{" "}
+        </Link>
         <Link
           href="/noteinsight"
           className="col-span-5 h-[70vh] max-800:col-span-10 max-w-[100vw] min-h-[220px] max-800:h-[41vh] max-h-[600px] card overflow-hidden pt-[50px] max-lg:h-[55vh] bg-[#C5B8D0] max-600:h-[35vh] rounded-[70px] "

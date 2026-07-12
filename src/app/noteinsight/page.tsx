@@ -88,7 +88,16 @@ export default function NoteInsight() {
       >
         {" "}
         <Image src={NoteQuiz} alt="Quiz Page" className="w-full" />
-      </BlurFade>{" "}
+      </BlurFade>
+
+      <div className="w-[40%] mt-5 mb-[100px] max-800:w-[70%] max-lg:w-[50%] max-450:w-[90%] text-[23px] max-800:text-[20px] max-sm:text-[17px] max-450:text-[15px] max-sm:w-full flex flex-col gap-10 max-800:gap-6 text-gray-600 mx-auto rounded-xl overflow-hidden">
+        <p className="text-[48px] font-extrabold leading-[105%] max-800:text-[37px] max-sm:text-[30px] max-450:text-[27px] w-full text-center">
+          The Stack and Infrastructure
+        </p>
+        <p className="font-serif text-gray-600">
+          NoteInsight&apos;s architecture is designed to handle complex data analysis securely and efficiently. I chose <strong>Next.js</strong> for a dynamic, fast-loading frontend experience. The backend is powered by a robust <strong>Spring Boot</strong> application, utilizing <strong>Spring Security</strong> to guarantee enterprise-grade data protection and user authentication. For persistent storage, I integrated <strong>PostgreSQL</strong>, ensuring relational data integrity and scalable performance. At the heart of the platform&apos;s intelligence, I utilized the <strong>Gemini API</strong> to drive the sophisticated note analysis and interactive quizzing features.
+        </p>
+      </div>
     </div>
   );
 }

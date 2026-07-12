@@ -86,7 +86,16 @@ export default function ChowHub() {
       >
         {" "}
         <Image src={Chowhub1} alt="chowhub" className="w-full" />
-      </BlurFade>{" "}
+      </BlurFade>
+
+      <div className="w-[40%] mt-5 mb-[100px] max-800:w-[70%] max-lg:w-[50%] max-450:w-[90%] text-[23px] max-800:text-[20px] max-sm:text-[17px] max-450:text-[15px] max-sm:w-full flex flex-col gap-10 max-800:gap-6 text-gray-600 mx-auto rounded-xl overflow-hidden">
+        <p className="text-[48px] font-extrabold leading-[105%] max-800:text-[37px] max-sm:text-[30px] max-450:text-[27px] w-full text-center">
+          The Stack and Infrastructure
+        </p>
+        <p className="font-serif text-gray-600">
+          For ChowHub, I prioritized a seamless user experience and rapid development cycles without compromising on performance. The core application is built on <strong>Next.js</strong>, providing a fast, SEO-friendly, and highly interactive frontend. To achieve a polished, accessible, and consistent design system, I integrated <strong>shadcn/ui</strong> components. For the backend infrastructure, I leveraged <strong>Supabase</strong>, which handles real-time database management, secure user authentication, and seamless data synchronization across the platform.
+        </p>
+      </div>
     </div>
   );
 }
